@@ -1,0 +1,86 @@
+
+
+@media screen and (min-width: 1024px) {
+body {font-size:16px; }
+}
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+body { font-size:14px;}
+}
+@media screen and (max-width: 640px) {
+body { font-size:12px; }
+}
+
+
+
+html, body {
+    height:100%;
+	width:100%;
+	position:fixed;
+	top:-8px; 
+	left:-8px;
+	text-align:center;
+	
+}
+
+
+section{
+height:100%;
+width:100%;
+position:fixed;
+
+}
+footer> h6::before{
+ counter-increment: section;
+ content: "Slide " counter(section) ; 
+ 
+ 
+}
+footer{
+	width: 100%;
+    overflow:hidden;
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+}
+article{
+	
+	margin-bottom:50px;
+}
+.turn {
+background-color:rgba(0,0,0,0.2);
+width:3%;
+height: 100%;
+opacity:0;
+
+
+}
+.turn:hover{
+opacity:0.5;
+}
+
+.left{
+float: left;
+margin-left:0;
+}
+.right{
+float: right;
+
+}
+
+.arrow{
+visibility: inherit;
+position:fixed;
+width:inherit;
+display:block;
+top:50%;
+}
+
+.slide, .slide:target ~ #slide1{
+visibility:hidden;
+}
+
+#slide1, .slide:target{
+visibility:visible;
+}
+

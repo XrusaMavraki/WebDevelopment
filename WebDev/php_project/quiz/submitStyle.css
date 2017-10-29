@@ -1,0 +1,50 @@
+
+html, body {
+	background-color: #F0FFF0;
+	font-family: 'myFont', Arial, Helvetica, sans-serif;
+	height: 100%;
+}
+
+#container {
+	width: 60%;
+	height: 80%;
+	padding: 3em;
+	border-radius: 3em;
+	background-color: #008000;
+	color: #F0FFF0;
+	min-width: 25em;
+	margin: 0 auto;
+}
+
+legend {
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.small {
+	font-size: 0.3em;
+}
+
+p {
+	font-size: 1.3em;
+	margin: 5em;
+}
+
+button {
+    padding: 0.5em;
+	text-align: center;
+    background-color: #F0FFF0;
+    font-size: 1.8em;
+    color: #008000;
+    border-radius: 0.5em;
+	border-style: solid;
+	border-width: 0px;
+    cursor: pointer;
+}
+
+#inner {
+	margin-top: 10em;
+	margin-bottom: 10em;
+	margin-top: 30%;
+}
+

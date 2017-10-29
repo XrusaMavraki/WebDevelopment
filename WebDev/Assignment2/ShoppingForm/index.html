@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Άσκηση 3</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script src="core.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body class="background-1">
+<div id="header">
+    <h1>Άσκηση 3</h1>
+</div>
+<div id="content">
+    <div id="first" class="section">
+        <div id="wrap-form">
+            <form id="form">
+                <fieldset>
+                    <legend>Login</legend>
+
+                    <label for="username">Username: <input type="text" id="username" name="username" value="" required></label>
+                    <label for="password">Password: <input type="password" id="password" name="password" value=""
+                                                           required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment</legend>
+
+                    <label for="payment_method">Payment Method:
+                        <select id="payment_method" name="payment_method">
+                            <option value="1">Payment on pickup</option>
+                            <option value="2">Bank transfer/deposit</option>
+                            <option value="3">Credit/Debit card</option>
+                        </select>
+                    </label>
+                    <fieldset id="type_of_card_fieldset">
+                        <label for="type_of_card">Type Of Card:
+                            <select id="type_of_card" name="type_of_card">
+                                <option value="1">Visa</option>
+                                <option value="2">Mastercard</option>
+                            </select>
+                        </label>
+
+                        <label for="card_number">Card number: <input type="text" id="card_number" name="card_number"
+                                                                     value="" maxlength="16"></label>
+                        <label for="expiration_date_month">Expiration Month: <input type="number"
+                                                                                    id="expiration_date_month"
+                                                                                    name="expiration_date_month"
+                                                                                    max="12" min="1"></label>
+                        <label for="expiration_date_year">Expiration Year: <input type="number"
+                                                                                  id="expiration_date_year"
+                                                                                  name="expiration_date_year"></label>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order Information</legend>
+
+                    <label for="name">Name: <input type="text" id="name" name="name" list="suggestions"
+                                                   required></label>
+                    <datalist id="suggestions"></datalist>
+
+                    <label for="address">Address: <input type="text" id="address" name="address"
+                                                         placeholder="Address Number, City, Postalcode"
+                                                         required></label>
+                    <div id="load_address"></div>
+                    <div id="map"></div>
+                    <label for="email">Email: <input type="email" id="email" name="email"
+                                                     placeholder="user@example.sth"></label>
+                    <label for="phone">Telephone number: <input type="number" id="phone" name="phone"></label>
+                    <label for="delivery_comments">Delivery comments: <textarea id="delivery_comments"
+                                                                                name="delivery_comments"
+                                                                                rows="5"></textarea></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Coupon code</legend>
+
+                    <label for="coupon_code">Coupon Code: <input type="text" id="coupon_code"
+                                                                 name="coupon_code"></label>
+                </fieldset>
+
+                <div class="centered">
+                    <label for="terms"><input type="checkbox" id="terms" name="terms" required> I agree with the <a
+                            href="#">terms</a></label>
+                </div>
+
+                <div class="centered">
+                    <input type="button" id="btnReset" value="Reset Form">
+                    <input type="submit" value="Submit order"> <span id="submit_loading"></span>
+                </div>
+            </form>
+
+            <div id="result"></div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

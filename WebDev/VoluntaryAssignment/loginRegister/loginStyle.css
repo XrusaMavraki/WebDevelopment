@@ -1,0 +1,84 @@
+
+html, body {
+    height: 100%;
+    background-color: #627A94;
+	font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+
+#loginRegister {
+	width: 35%;
+	height: 25%;
+	margin-top:  auto;
+    position:absolute;
+    top:30%;
+    left:35%;
+
+}
+
+legend {
+    font-size: 2em;
+    color: #EFEFEF;
+}
+label{
+    font-size: 1.3em;
+    color: #EFEFEF;
+}
+
+fieldset {
+	margin-bottom: 10%;
+    border: 4px solid #EFEFEF;		/* 303E4E */ 
+	border-radius: 15px;
+}
+
+.in {
+    display: block;
+	float: left;
+	padding: 1%;
+	margin-top: 1%;
+	width: 85%;
+	box-shadow: inset 0px 2px 10px rgba(0, 0, 0, .2);
+	background-color: #FFFFFF;
+	font-size: 1.1em;
+	border-radius: 6px;
+    border: solid 2px #556B84;
+}
+
+button {
+
+	text-align: center;
+    background: #FFFFFF;
+    cursor: pointer;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .1);
+    font-size: 1.5em;
+    margin-top: 0.2%;
+    margin-left:1%;
+    margin-right:1%;
+    padding:4%;
+    font-family: inherit;
+    background: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    color: #fff;
+    overflow: hidden;
+}
+
+button:hover {
+    background: #94a5b8;
+}
+
+
+button:active{
+    border-color: #cccccc;
+    color: #cccccc;
+}
+#register{
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

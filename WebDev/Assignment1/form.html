@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title> &nbsp;</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body >
+	<div id="content">
+  <h2> Place your order</h2>
+  
+  <form> 
+  <fieldset>
+  <legend>Login:</legend>
+  
+  <label> Username* :  <input class="al" type="text"  name="username" id="username" required > </label> <br/>
+  <div class="tooltip"> <label>Password* : <input class="al" type="password" name="Password" id="password" pattern="(?=.*\d)(?=.*[A-Z]).{5,}" required>
+  <br/><span class= "tooltipText"> The password must contain at least 5 characters including at least one Capital letter (A-Z) and a number (0-9)  </span> </label>  </div>
+  
+  </fieldset>
+  
+  <fieldset>
+	  <legend> Payment:</legend>
+	  <label > Payment-Method: <select id="pay" name="payment-method" >
+	  <option value = "1" > Payment on pick-up </option>
+	  <option value= "2"> Bank transfer/deposit </option>
+	  <option value= "3"> Credit/Debit card </option>
+	  </select>
+	  </label>
+
+		  <fieldset id="card">
+		  <label> Card Number* :  <input class="al" type="text" name="cnum" id="cnum" required > </label> <br/>
+		  <label> Expiration Date: <input class="al" type= "number" name="month" id="month" min="1" max="12" value="1"></label> <br/>
+		 <label> <input class="al" type= "number" name="year" id="year" min="2016" max="2030" value="2016"></label> <br/>
+		
+		  </fieldset>
+  </fieldset>
+  <fieldset>
+	  <legend> Order Information: </legend>
+	  <label> Name*: <input class="al" type= "text" name="name" id="name" required> </label> <br/>
+	  <label> Address: <input class="al" type= "text" name="address" id="address" > </label> <br/>
+	  <label> E-mail: <input class="al" type="email" name="email" id="email" placeholder="user@example.com"> </label> <br/>
+	  <label> Telephone number: <input class="al" type="tel" name="telephone" id="telephone"> </label> <br/>
+	  <label> Delivery comments: <textarea class="al" rows="3" cols="22" ></textarea> </label>
+	  </fieldset>
+  <fieldset>
+  <legend> Coupon: </legend>
+		<label> Coupon code: <input class="al" type="text" name="coupon" id="coupon"> </label> <br/>
+  </fieldset>
+  <label id="terms"> I agree with the <span>terms</span><input type="checkbox" required></label> <br/>
+  <button  id="butt" type="submit">Submit</button><br/>
+  </form>
+  </div>
+</body>
+
+</html>

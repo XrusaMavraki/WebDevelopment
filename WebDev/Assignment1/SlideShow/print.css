@@ -1,0 +1,32 @@
+
+
+html, body {
+height: 100%; 
+padding: 0; 
+margin: 0; 
+
+}
+
+
+.turn ,#slide1,.img{
+display:none;
+}
+.slide{
+width: 50%;
+height: 50%;
+float:right;
+font-size:8px;
+}
+
+.slide:nth-child(2n+1){
+ float:left;
+ }
+
+ header{
+ padding:0;
+ margin:0;
+ 
+ }
+
+
+	

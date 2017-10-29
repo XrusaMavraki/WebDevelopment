@@ -1,0 +1,127 @@
+
+
+article{
+font-family:Garamond,sans-serif;
+}
+ol,li {
+    margin: 0;
+    padding: 0;
+}
+ol {
+    counter-reset: section;
+ 
+}
+li {
+    list-style: none;
+	counter-increment: section;
+    text-align:left;
+	
+}
+
+
+
+header{
+text-align:center;
+font-size:40px;
+font-family:Avant Garde, Candara, Tahoma, sans-serif;
+text-transform: uppercase;
+}
+h2:not(#sl1h2){
+font-size:25px;
+border: 2px solid black;
+display:inline;
+}
+h3{
+font-size:16px;
+font-weight: bold;
+text-decoration: underline;
+color:#55784a;
+text-transform: uppercase;
+}
+h3::before {
+	content: counter(section);
+	padding-right: 8px;
+   
+}
+h6{
+	float: right;
+	padding-right:15px;
+}
+#arrow{
+background-image: url("Header_Arrow_CW.jpg");
+padding:19px;
+
+}
+#flash{
+background-image:url("The-Flash-Banner.jpg");
+padding:19px;
+}
+#game-of-thrones{
+background-image:url("Game-of-Thrones-Background.png");
+color:white;
+padding:19px;
+}
+#suits{
+background-image:url("suits.jpg");
+padding:19px;
+
+}
+#silicon{
+background-image:url("silicon.jpg");
+padding:22px;
+
+}
+p>.img{
+float:left;
+margin:20px;
+width:352px;
+height: 240px;
+
+}
+.slide {
+opacity:0.1;
+-webkit-transition: opacity  1s ease;
+transition:opacity 1s ease;
+}
+ .slide:target,#slide1 {
+opacity:1;
+}
+#slide1 {
+
+
+width:100%;
+height:100%;
+background-color: #d9ccff;
+}
+
+#slide1  h1{
+font-size:55px;
+}
+
+
+#slide1 h2{
+font-size:45px;
+animation:jitter 200ms linear infinite;
+}
+@keyframes jitter{ 50%{transform:skewY(0.7deg) skewX(-0.7deg) scale(1.006);}}
+
+#slide1>article {
+background-color: #cde364;
+border-top: 4px dotted #000;
+border-bottom: 4px dotted #000;
+box-shadow: inset 0 -2px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -2px 0 0 #000;
+margin-bottom: 1px;
+margin-top:10%;
+letter-spacing: .15em;
+
+font-family: Avant Garde, Candara, Tahoma, sans-serif;
+padding-top:10%;
+text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+/* http://codepen.io/juanbrujo/pen/yGpAK 
+here I found the shadow effect
+*/
+}
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <title>Άσκηση 4</title>
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+<h2>Καλάθι Αγορών</h2>
+<div id="productarea">
+    <p class="tip">Σύρατε (Drag) τα ποϊόντα που επιθυμείτε να αγοράσετε στο Καλάθι Αγορών</p>
+    <img id="cow_tux" draggable="true" src="cow_tux.jpg" class="productimage" alt="Cow Tux"/>
+    <img id="viking_tux" draggable="true" src="viking_tux.png" class="productimage" alt="Viking Tux"/>
+    <img id="darth_maul_tux" draggable="true" src="darth_maul_tux.png" class="productimage" alt="Darth Maul Tux"/>
+    <img id="ninja_tux" draggable="true" src="ninja_tux.png" class="productimage" alt="Ninja Tux"/>
+</div>
+
+<div id="basketarea">
+    <h3>Το καλάθι αγορών σας:</h3>
+    <div id="basket"></div>
+    <div id="empty"><label id="lblempty">Άδειασμα καλαθιού</label></div>
+    <div id="trash">
+        <label id="lbltrash">Αφείστε (Drop) εδώ τα προϊόντα για τα οποία θέλετε να ακυρώσετε την παραγγελία</label>
+        <img draggable="false" id="trashimg" src="trash.png" alt="trash"/>
+    </div>
+</div>
+<div id="response"></div>
+</body>
+</html>

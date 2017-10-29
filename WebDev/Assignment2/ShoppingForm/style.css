@@ -1,0 +1,172 @@
+body {
+    padding: 0px;
+    margin: 0.2% 1.5% 0.2% 1.5%;
+    width: 97%;
+    font-family: Verdana;
+}
+
+.background-1 {
+    background-color: #e0e0e0;
+}
+
+#header, #content, #footer {
+    width: 100%;
+}
+
+#footer {
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+    margin-top: 0px;
+}
+
+#footer small, #footer small a {
+    color: #b5afaf;
+}
+
+#footer p {
+    margin: 8px 0px 4px 0px;
+}
+
+#header {
+    min-height: 30px;
+    padding: 5px;
+}
+
+#header h1 {
+    vertical-align: middle;
+    margin: 5px 0px;
+    padding: 0px;
+    color: #8b8383;
+}
+
+#content {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+
+    min-height: 100px;
+    padding: 5px;
+}
+
+div.section {
+    margin-bottom: 10px;
+}
+
+#wrap-form {
+    width: 400px;
+    margin: auto;
+}
+
+fieldset {
+    margin: 0px;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 14px;
+    color: #4668f2;
+}
+
+#wrap-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#wrap-form fieldset label {
+    text-align: right;
+}
+
+#wrap-form #terms {
+    text-align: center !important;
+}
+
+#wrap-form label input:not([type="checkbox"]) {
+    margin-left: 5px;
+    float: right;
+}
+
+a {
+    color: #797070;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="password"], select, textarea {
+    width: 220px;
+}
+
+#expiration_date_month {
+    width: 40px;
+}
+
+#expiration_date_year {
+    width: 80px;
+}
+
+#type_of_card_fieldset {
+    display: none;
+    margin-top: 10px;
+    border: none;
+    padding: 0px;
+}
+
+#map {
+    width: 100%;
+    height: 180px;
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.loading {
+    display: inline-block;
+    width: 100%;
+    height: 9px;
+    margin-left: 5px;
+    content: "";
+    background: url("http://animizer.net/images/white-loader.gif") no-repeat center center;
+    background-size: 75px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.centered {
+    width: 100%;
+    text-align: center;
+}
+
+#result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+    width: 100%;
+}
+
+input[required] {
+    border: 1px solid #d2652f;
+    outline: none;
+}
+
+#result span {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#result .name {
+    color: #928b8b;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#result .value {
+    font-size: 12px;
+}
+
+#delivery_comments {
+    resize: vertical;
+    min-height: 100px;
+}

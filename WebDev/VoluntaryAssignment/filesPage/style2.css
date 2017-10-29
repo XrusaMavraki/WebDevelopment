@@ -1,0 +1,156 @@
+
+html, body {
+    background-color: #c9c9c9;
+	font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+
+#banner {
+    width:100%;
+    background-color: #627A94;
+    position: fixed;
+    top: 0;
+    right: 0;
+	/* border-bottom: 0.2em solid #485B70; */
+	box-shadow: 0 -0.5em 3em 0 #000000, inset 0 -0.25em 0.5em -0.35em #000000;
+}
+
+.innerList {
+   margin-top: 5em;	/*hopefully good enough*/
+}
+
+table {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0.5em;
+}
+
+button, .btn {
+    text-align: center;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    background: none;
+    transition: all 0.3s;
+    border: 0.2em solid #fff;
+    color: #fff;
+	
+	border-radius: 0.8em;
+    padding: 0.5em;
+    font-size: 0.9em;
+	font-weight: 700;
+	margin: 0.2em;
+	min-width: 8em;
+}
+
+
+button:hover{
+    opacity: 0.8;
+    border-color: #fff;
+}
+
+form {
+	float: right;
+}
+
+#New:hover{
+    background: #C24B4D;
+
+}
+
+#Drafts{
+    left: 40%;
+}
+
+#Drafts:hover{
+    background: #eb9947;
+}
+
+#Completed{
+    right:0;
+}
+
+#Completed:hover{
+    background: #40bf6a;
+}
+
+.OpenFileButtonC{
+
+    width:200px;
+    bottom:25px;
+    right:15px;
+    position: fixed;
+    background: #a6a6a6;
+}
+
+.btnType2{
+    text-align: left;
+	border-radius: 0px;
+    padding:0%;
+    margin-right:100px;
+    height:40px;
+	width: 60%;
+}
+
+.btnType2:hover,.OpenFileButtonC:hover {
+    background: #94a5b8;
+    color:#333333;
+    border-color: #fff;
+}
+
+.btn:active,.OpenFileButtonC:active{
+    border-color: #cccccc;
+    color: #cccccc;
+}
+
+.btnType2:active{
+    border-color: darkgray;
+    color: darkgray;
+}
+
+.row{
+    width:100%;
+    height:40px;
+    display:table;
+}
+
+.filename{
+    display: inline-block;
+    margin-right:40px;
+    margin-top: 5px;
+    text-align: left;
+	width:50%;
+
+}
+
+.btnDiv{
+    display: inline-block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.btnDivNew{
+    background: #C24B4D;
+}
+.btnDivDraft{
+    background: #eb9947;
+}
+.btnDivComplete{
+    background: #40bf6a;
+}
+#draftFiles{
+    display: none;
+}
+#completeFiles{
+    display: none;
+}
+.btnType2:hover {
+    background: #e6e6e6;
+}
+.clearFix >:before, .clearFix> :after{
+    content: " ";
+    display: table;
+}
+.clearFix>:after{
+    clear:both;
+}
